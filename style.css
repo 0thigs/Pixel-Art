@@ -1,10 +1,17 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }   
 
 body {
-    background-color: gray;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -15,13 +22,21 @@ header {
     flex-direction: column;
 }
 
+.mega-container {
+    width: 50rem;
+    height: 715px;
+    padding: 1rem;
+    background-color: #861657;
+    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+    border-radius: 20px;
+    box-shadow: 6px 5px 12px 0px #000000;
+}
+
 .cores-container {
     display: flex;
-    width: 1000px;
-    height: 200px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
+    padding: 1px;
 }
 
 .clear-change {
@@ -33,17 +48,20 @@ header {
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: solid 2px black;
+    box-shadow: 0px 0px 11px 0px #000000;
+    cursor: pointer;
 }
 
 .cores {
     width: 100px;
     height: 100px;
-    border: solid 2px black;
+    border: solid 1px black;
+    cursor: pointer;
 }
 
 main {
-    height: 550px;
-    padding: 20px;
+    height: 31.5rem;
+    margin: 10px;
 }
 
 .linhas {
@@ -54,7 +72,8 @@ main {
 .empty {
     width: 100px;
     height: 100px;
-    border: solid 2px black;
+    cursor: pointer;
+    border: solid 1px black;
     background-color: white;
 }
 
@@ -64,22 +83,46 @@ main {
     background-color: black;
 }
 
+#black:hover {
+    background-color: rgb(19, 19, 19);
+}
+
 #red {
     background-color: red;
+}
+
+#red:hover {
+    background-color: rgb(233, 20, 20);
 }
 
 #green {
     background-color: green;
 }
 
+#green:hover {
+    background-color: rgb(26, 134, 26);
+}
+
 #blue {
     background-color: blue;
+}
+
+#blue:hover {
+    background-color: rgb(38, 38, 206);
 }
 
 #clear {
     background-color: white;
 }
 
+#clear:hover {
+    background-color: rgb(204, 204, 204);
+}
+
 #color_picker {
-    background-color: aquamarine;
+    background-color: white;
+}
+
+#color_picker:hover {
+    background-color: rgb(204, 204, 204);
 }
